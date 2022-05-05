@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Is Everything.</title>
+    <link rel="stylesheet" href="styling/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="img/logo.png" alt="logo" class="logo">
+            <nav>
+                <ul id="menulist">
+                    <li><a href="game controllers">Game Controllers</a></li>
+                    <li><a href="VR Accessories">VR Accessories</a></li>
+                    <li><a href="Media Remotes">Media Remotes</a></li>
+                    <li><a href="Others">Others</a></li>
+                </ul>
+            </nav>
+            <img src="img/menu.png" alt="logo" class="menu-icon" 
+            onclick="togglemenu()">
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h2>PS4 V2 <br>Dualshock 4</h2>
+                <h3>Wireless Controller for Playstation 4</h3>
+                <p>(Compatable/Generic)</p>
+                <h4>$30.23</h4>
+                <button type="button">Buy Now <img src="img/arrow.png" alt=""></button>
+            </div>
+            <div class="col-2">
+                <img src="img/controller.png" class="controller">
+                <div class="colorbox"></div>
+                <div class="add-btn">
+                    <img src="img/add.png" alt="add png">
+                    <p><small>Add to Cart</small></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-link">
+            <img src="img/fb.png" alt="">
+            <img src="img/tw.png" alt="">
+            <img src="img/ig.png" alt="">
+        </div>
+    </div>
+
+    <script>
+        var menulist=document.getElementById("menulist");
+        menulist.style.maxHeight="0px";
+
+        function togglemenu(){
+            if(menulist.style.maxHeight=="0px")
+            {
+                menulist.style.maxHeight="130px";
+            }
+            else
+            {
+                menulist.style.maxHeight="0px"
+            }
+        }
+    </script>
+</body>
+</html>
